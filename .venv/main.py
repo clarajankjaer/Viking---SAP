@@ -152,7 +152,7 @@ def find_user_match(cell_value, keyword_list):
 
 
 def define_z_codes(cell_value):
-    z_codes_list = ['Z', '{Z'] # TODO: Consider extending to codes starting with "Y"
+    z_codes_list = ['Z', '{Z', 'Y'] # TODO: Consider extending to codes starting with "Y"
     for text in z_codes_list:
         if cell_value.startswith(text):
             return 'Z - Custom'
